@@ -12,7 +12,7 @@ err := errors.Format("This is error %s", someVar)
 # Return a nil error, for a standard error this is usually just `nil`
 return errors.Nil()
 
-# Checking if error exists
+# Checking if error exists, for standard error this is usually `if err != nil`
 if err.Present() {
         doSomething()
 }
